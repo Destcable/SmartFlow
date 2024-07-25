@@ -1,3 +1,9 @@
+import { Header } from "./shared/ui/Header/Header";
+import { ProjectsPageList } from "./shared/ui/Pages/Projects/ProjectsPageList";
+
 export default function App() { 
-    return <h1>HelloWorld</h1>
+    return <>
+        <Header />
+        <ProjectsPageList />
+    </>
 }
