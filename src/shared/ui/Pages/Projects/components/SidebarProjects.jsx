@@ -2,7 +2,8 @@ import { Button, Input } from "@fluentui/react-components";
 import { AddRegular, SettingsRegular, StarRegular } from "@fluentui/react-icons";
 
 export const SidebarProjects = ({ 
-    styles
+    styles,
+    children
 }) => <>
 <div className={styles.sidebarHeader}>
             <Input
@@ -19,5 +20,6 @@ export const SidebarProjects = ({
                     <Button icon={<AddRegular />}>Проект</Button>
                 </div>
             </div>
+            {children}
         </div>
 </>
